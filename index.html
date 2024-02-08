@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HTML Form Project</title>
+    <link rel="stylesheet" href="./style.css" />
+ <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script
+      src="https://kit.fontawesome.com/7041e6661f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+     <!--container starts here-->
+ <div class="container mx-auto">
+     
+    <!--payment div starts here-->
+    <div class="card">
+        <div class="card-header">Payment form example</div>
+        </div>
+       <!--payment div ends here-->
+
+
+    <!--row missing filed starts here-->
+    <div class=" row ">
+        <!--missing field  starts here-->
+        <div class="col-12">
+        <div class="alert alert-danger role="alert">
+            Some field are missing  </div><!--missing field div ends here-->
+        </div>
+        </div><!--row missing filed ends here-->
+
+
+
+
+             <!--row card info div starts here-->
+            <div class="row"> 
+
+             <div class="col-5">
+                <label for="cnum">Card #</label><br>
+                <input type="number" id="cnum" class="form-control"  name="card_info" size="18" placeholder="xxxx-xxxx-xxxx-xxxx">
+
+             </div>
+
+             <div class="col-3">
+                <label for="ccvc">CVC #</label><br>
+                <input type="number" id="ccvc" class="form-control"  name="card_info" size="4" placeholder="0000">
+             </div>
+
+             <div class="col-4">
+                <label for="camount">Amount</label><br>
+                <input type="number" id="camount" class="form-control"  name="card_info" size="10" placeholder="0.00">
+             </div>
+
+
+            </div><!-- row card info div ends here-->
+          
+
+
+<!--Form container starts here-->
+<div class="form_container">
+
+<form>
+    <div class="row"> <!--personal info row starts here-->
+      <div class="col">
+        <label for="inputEmail4">First name</label><br>
+        <input type="text" class="form-control" placeholder="First name">
+      </div>
+      <div class="col">
+        <label for="form-control">Last name</label><br>
+        <input type="text" class="form-control" placeholder="Last name">
+      </div>
+    </div>!--personal info row ends here-->
+
+
+    <div class="row"><!--address row starts here-->
+      <div class="col-6">
+        <label for="inputCity">City</label><br>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class=" col-3">
+        <label for="inputState">State</label><br>
+        <select id="inputState" class="form-control">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-3">
+        <label for="inputZip">Zip</label><br>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+    </div><!--address row ends here-->
+
+
+    <div class="row"><!--Form payment method and message row starts here-->
+
+    <div class="col-2">
+        <label for="fcity">We accept :</label><br>
+
+    </div>
+ <div class="col-3"></div>
+    
+    <div class="col">
+        <label for="fmessage">Message</label><br>  
+        <textarea rows="4"> </textarea>
+        <p>Add any notes here</p>
+    </div>
+
+
+    </div><!--Form payment method and message row ends here-->
+
+    <div class="row "> <!--Form button row stars here-->
+        <div class="col-10"></div>
+        <div class="col-2">
+        <button type="button" class="btn btn-secondary">Cancel</button>
+        <button type="button" class="btn btn-primary">Save</button>
+    </div>
+    </div><!--Form button row ends here-->
+  </form>
+
+ </div>
+ <!--container ends here-->
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
