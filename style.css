@@ -7,38 +7,31 @@ margin: auto;
 margin-top: 15px;
 }
 
-.payment_div{
-height: 45px;
-background-color: rgb(145, 137, 137);
-border-radius: 3px;
-margin-bottom: 0px;
 
-}
 
-.payment_info_div{
-    position: relative;
-    height: 100px;
-    display: block;
-    margin-bottom: 0px;
-   
-}
 
-.card_info_div{
-    position: relative;
-    display: flex;
-    justify-content:space-between;
-   
-    margin-bottom: 10px;
-   
-}
  
-.form_container{
-    margin-top: 0px;
-    position: relative;
-}
+
 
 
 
 textarea{
-    width: 80%;
+    width: 100%;
+    align-items: end;
+   
+   
+}
+
+.card_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    border-radius: 4px;
+    background-color: rgb(129, 123, 123);
+    height: 35px;
+    width: 160px;
+    margin-top: 10px;
+ 
 }
