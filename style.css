@@ -1,13 +1,15 @@
-.container_div{
+.cont_div{
+    height: 55px;
 
-width: 700px;
-
-border:  1px solid lightgray;
-margin: auto;
 margin-top: 15px;
 }
 
-
+.somefield{
+    display: flex;
+   vertical-align: middle;
+    height: 30px;;
+  
+}
 
 
  
