@@ -74,10 +74,20 @@ if(testArea.value.length<20){
     testArea.classList.add('is-invalid');
 }
 
+let CheckCardT= document.querySelectorAll('.checkCardT');
+if(!CheckCardT[0].checked && !CheckCardT[1].checked && !CheckCardT[2].checked){
+    CheckCardT.classList.add('is-invalid');
+}
+
+
+
 let CheckAllField= document.querySelector('.is-invalid');
 if(checkAllField){
 alert('Everything is perfect');
 }
+
+
+
 
 }
 
