@@ -33,20 +33,18 @@ element.classList.remove("is-invalid");
  if(regex.test(testName[0].value) || (testName[0].value.length<2) )
     {
         //
-       
         testName[0].classList.add('is-invalid');
     }
 
-    if(regex.test(testName[1].value)|| (testName[0].value.length<2))
+    if(regex.test(testName[1].value)|| (testName[1].value.length<2))
     {
         //
-       
         testName[1].classList.add('is-invalid');
     }
 
 let testCardA= document.querySelector('#camount');
 
-if(testCardA.value.length==0)
+if(testCardA.value.length<1)
 {
    
     testCardA.classList.add('is-invalid');
@@ -71,19 +69,20 @@ if(testZip.value.length!=5){
 
 let testArea=document.querySelector('.textA');
 if(testArea.value.length<20){
-    testArea.classList.add('is-invalid');
+    testArea.style.borderColor = "red";
 }
 
-let CheckCardT= document.querySelectorAll('.checkCardT');
-if(!CheckCardT[0].checked && !CheckCardT[1].checked && !CheckCardT[2].checked){
-    CheckCardT.classList.add('is-invalid');
+let checkCardT= document.querySelectorAll('.checkCardT');
+if(checkCardT[0].checked==false && checkCardT[1].checked==false && checkCardT[2].checked==false){
+  let cardStatus= document.querySelector('.card_type_div');
+   cardStatus.style.borderColor = "red";
+  
 }
-
 
 
 let CheckAllField= document.querySelector('.is-invalid');
 if(checkAllField){
-alert('Everything is perfect');
+   
 }
 
 
